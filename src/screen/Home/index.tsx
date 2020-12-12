@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch } from 'react-native';
-import { useTheme } from '../utils/ManageThemeProvider';
+import { useTheme } from '../../components/ManageThemeProvider';
 import styled from 'styled-components/native';
 
 const Container = styled.View`

@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components/native';
 
 import darkTheme from '../../themes/dark';
 import lightTheme from '../../themes/light';
-import usePersistedState from '../usePersistedThemeState';
+import usePersistedState from '../../utils/usePersistedThemeState';
 
 
 const defaultMode = lightTheme.type;
