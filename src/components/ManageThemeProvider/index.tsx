@@ -11,7 +11,7 @@ const defaultMode = lightTheme.type;
 
 const ThemeContext = createContext({
   mode: defaultMode,
-  setMode: mode => console.log(mode)
+  setMode: mode => mode
 });
 
 const ManageThemeProvider: React.FC = ({ children }) => {
