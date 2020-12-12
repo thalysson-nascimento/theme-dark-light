@@ -29,7 +29,7 @@ const getPersistedThemeState = async (key: string, initialStateValue: any) => {
 }
 
 const usePersistedState = (key: string, initialValue: any) => {
-  const [state, setState] = useState();
+  const [state, setState] = useState(initialValue);
 
   const getPersisted = async () => {
     const getPersistedTheme = await getPersistedThemeState(key, initialValue);
@@ -39,7 +39,7 @@ const usePersistedState = (key: string, initialValue: any) => {
   useEffect(() => {
     getPersisted();
   }, []);
-
+  
   const persisted = async () => {
     await persistedThemeState(key, state);
   }
@@ -47,7 +47,7 @@ const usePersistedState = (key: string, initialValue: any) => {
   useEffect(() => {
     persisted();
   }, [state]);
-
+  
   return [state, setState];
 }
 
