@@ -3,10 +3,15 @@ import React from 'react';
 import Home from './screen/Home';
 import ThemeManager from './components/ThemeManager';
 
+import Routes from './routes';
+import { NavigationContainer } from '@react-navigation/native';
+
 const App: React.FC = () => {
-  return(
+  return (
     <ThemeManager>
-      <Home />
+      <NavigationContainer>
+        <Routes />
+      </NavigationContainer>
     </ThemeManager>
   );
 }
