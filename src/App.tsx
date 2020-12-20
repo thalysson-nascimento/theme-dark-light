@@ -1,6 +1,5 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import Home from './screen/Home';
 import ThemeManager from './components/ThemeManager';
 
 import Routes from './routes';
